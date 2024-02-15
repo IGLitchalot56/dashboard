@@ -1,2 +1,2 @@
-plotly.grapgh_objects
+plotly
 requests
