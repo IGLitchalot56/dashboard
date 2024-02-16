@@ -49,8 +49,8 @@ if location_input:
                        {'range': [900, 1100], 'color': "darkgreen"}],
                    'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 1000}}))
         
-        labels = ['Wind Gust', 'UVI', 'Moon Phase']
-        values = [10, 5, 15]  
+        labels = ['Wind Gust', 'Wind Speed', 'Degree']
+        values = [2, 2, 15]  
 
         fig_donut = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.3)])
 
@@ -68,3 +68,5 @@ with col1:
 with col2:
     st.write('<style>div.Widget.row-widget.stRadio div[role="radiogroup"] > label {text-align: left;} </style>', unsafe_allow_html=True)
     st.plotly_chart(fig2, use_container_width=True)
+
+
