@@ -49,7 +49,7 @@ if location_input:
                        {'range': [900, 1100], 'color': "darkgreen"}],
                    'threshold': {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 1000}}))
         
-        labels = ['Wind Gust', 'Wind Speed', 'Degree']
+        labels = ['Wind Gust', 'Wind Speed', 'Wind Degree']
         values = [2, 2, 15]  
 
         fig_donut = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.3)])
